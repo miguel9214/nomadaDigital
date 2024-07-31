@@ -1,0 +1,68 @@
+// masthead area
+#masthead {
+    background-color: $masthead-color;
+}
+.site-header-main {
+    margin: 0 auto;
+    position: relative;
+}
+.site-header-wrap {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1252px;
+}
+.header-image {
+    text-align: center;
+    a {
+        display: block;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+.custom-logo-link {
+    img {
+        max-width: 200px;
+    }
+}
+// When the full-width layout is selected, make any header images full-width also.
+.layout-full-width .header-image img {
+    width: 100%;
+}
+@media #{$screen-sm} {
+    .site-header-wrap {
+        padding: $site-header-padding;
+        max-width: $site-header-wrap-max-width;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+// Subtitles support
+// https://wordpress.org/plugins/subtitles/
+.entry-title-primary {
+    display: block;
+}
+.entry-title-primary+.subtitle {
+    margin-top: 0.5rem;
+}
+#comments .comments-title span.subtitle {
+    display: none;
+}
+.subtitle {
+    font-size: $subtitle-font-size-xs;
+    display: block;
+    color: $body-text-color;
+    font-weight: 300;
+    p {
+        margin-bottom: 0;
+    }
+}
+.woocommerce div.product div.images.woocommerce-product-gallery{
+    opacity: 1 !important;
+}
+@media #{$screen-sm} {
+    .subtitle {
+        font-size: $subtitle-font-size;
+    }
+}

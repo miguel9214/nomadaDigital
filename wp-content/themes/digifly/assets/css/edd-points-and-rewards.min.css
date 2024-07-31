@@ -1,0 +1,16 @@
+/**
+ * Theme Name: DigiFly
+ * Theme URI: https://www.pluginsandsnippets.com/downloads/digifly/
+ * Author: Plugins & Snippets
+ * Author URI: https://pluginsandsnippets.com
+ * Description: Digifly is a great Free WordPress Theme if you are looking to start an Easy Digital Downloads (EDD) or WooCommerce webstores. It contains all the basic features to start an eCommerce WordPress Webstore from scratch. It’s also good for blogs, small business, startups, agencies, eCommerce shops as well as personal portfolio sites and most types of projects. Overall, it's a simple and extensible WordPress theme that is perfect to sell your digital products.
+ * Version: 1.3.5
+ * Text Domain: digifly
+ * Tested up to: 6.3
+ * Requires PHP: 5.6 or higher
+ * Tags: custom-menu, custom-logo, entertainment, featured-images, full-width-template, one-column, two-columns, left-sidebar, e-commerce, right-sidebar, editor-style, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready, blog
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+.edd-points-product-message{margin-top:1rem;margin-bottom:1rem}.edd-points-paging{text-align:center}.edd-points-paging .pagination *{padding:.5rem}.edd-points-paging .pagination .disabled{display:none}.edd-points-paging .edd-points-tablenav-pages .current{font-weight:700}.edd-points-sales-loader{display:none;text-align:center}.edd-points-checkout-message,.edd-points-redeem-points-wrap{background:#fcfcfc;border:2px solid #f4f4f4;padding:1rem 2rem;margin-bottom:2rem}.edd-points-redeem-message{vertical-align:middle}@media only screen and (min-width:1220px){.edd-points-checkout-message,.edd-points-redeem-points-wrap{display:flex;justify-content:space-between;align-items:center}.edd-points-checkout-message p,.edd-points-redeem-points-wrap p{margin-bottom:0}}

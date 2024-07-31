@@ -1,0 +1,1187 @@
+# Copyright (C) 2023 Plugins & Snippets
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DigiFly 1.3.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/digifly\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-08-24T09:50:40+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: digifly\n"
+
+#. Theme Name of the theme
+#: includes/admin/theme-options.php:14
+#: includes/admin/theme-options.php:15
+msgid "DigiFly"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://www.pluginsandsnippets.com/downloads/digifly/"
+msgstr ""
+
+#. Description of the theme
+msgid "Digifly is a great Free WordPress Theme if you are looking to start an Easy Digital Downloads (EDD) or WooCommerce webstores. It contains all the basic features to start an eCommerce WordPress Webstore from scratch. It’s also good for blogs, small business, startups, agencies, eCommerce shops as well as personal portfolio sites and most types of projects. Overall, it's a simple and extensible WordPress theme that is perfect to sell your digital products."
+msgstr ""
+
+#. Author of the theme
+msgid "Plugins & Snippets"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://pluginsandsnippets.com"
+msgstr ""
+
+#: 404.php:7
+#: includes/template-tags.php:268
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:17
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#. translators: 1: number of comments
+#: comments.php:27
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr ""
+
+#: edd_templates/checkout_recommendations.php:23
+msgid "this item"
+msgstr ""
+
+#: edd_templates/checkout_recommendations.php:24
+msgid "these items"
+msgstr ""
+
+#: edd_templates/checkout_recommendations.php:29
+#: edd_templates/single_recommendations.php:19
+msgid "Users who purchased %s, also purchased:"
+msgstr ""
+
+#. Template Name of the theme
+msgid "FES Dashboard"
+msgstr ""
+
+#. Template Name of the theme
+msgid "FES Vendor"
+msgstr ""
+
+#: fes_templates/frontend-orders.php:25
+msgctxt "FES vendor dashboard Order display"
+msgid "Price"
+msgstr ""
+
+#: fes_templates/frontend-orders.php:33
+msgctxt "FES vendor dashboard Order display"
+msgid "Customer"
+msgstr ""
+
+#: fes_templates/frontend-orders.php:41
+msgctxt "FES vendor dashboard Order display"
+msgid "Details"
+msgstr ""
+
+#: fes_templates/frontend-orders.php:59
+msgid "No orders found"
+msgstr ""
+
+#: fes_templates/frontend-products.php:31
+msgctxt "FES vendor dashboard Product display"
+msgid "Price"
+msgstr ""
+
+#: fes_templates/frontend-products.php:39
+msgctxt "FES vendor dashboard Product display"
+msgid "Purchases"
+msgstr ""
+
+#: fes_templates/frontend-products.php:47
+msgctxt "FES vendor dashboard Product display"
+msgid "Details"
+msgstr ""
+
+#: fes_templates/frontend-products.php:65
+msgid "No items found"
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:2
+#: includes/customizer.php:1258
+msgid "Theme Options"
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:4
+msgid "The Theme Customization Options for DigiFly are available in the "
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:4
+msgid "Customizer"
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:10
+msgid "Get Pro Tips on how to Start a Great Webstore!"
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:11
+msgid "A great webstore converts traffic into paying customers. The beauty with WordPress is you can start small and scale up as you go. Learn some Pro Tips on how to Start a Great Webstore and what steps to do in which order to obtain a high converting webstore. Sign-up for our Pro Tips from the founders of <a href=\"https://www.pluginsandsnippets.com\" target=\"_blank\">Plugins & Snippets</a> and subscribe to our newsletter."
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:13
+msgid "There was an error in processing your request, please try again."
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:21
+msgid "Subscribe"
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:27
+msgid "Thank you for signing up to our Newsletter!"
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:34
+msgid "Additional Resources"
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:35
+msgid "Plugins & Snippets "
+msgstr ""
+
+#: includes/admin/theme-options-markup.php:35
+msgid "offers many plugins and resources to increase the conversion rates of your webstore. Supercharge your Webshop with our plugins and get up to date on important Webhshop Conversion Topics"
+msgstr ""
+
+#: includes/back-compat.php:39
+#: includes/back-compat.php:52
+#: includes/back-compat.php:70
+msgid "DigiFly requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr ""
+
+#: includes/class-digifly-search.php:129
+msgctxt "placeholder"
+msgid "Search products"
+msgstr ""
+
+#: includes/class-digifly-search.php:133
+msgctxt "label"
+msgid "Search products:"
+msgstr ""
+
+#: includes/class-digifly-search.php:138
+#: searchform.php:16
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:53
+msgid "Font Family"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:54
+msgid "Font Size"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:55
+msgid "Font Weight"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:56
+msgid "Font Style"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:57
+msgid "Line Height"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:250
+msgid "Thin"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:251
+msgid "Light"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:252
+#: includes/class-digifly-wp-customizer-typo-control.php:269
+msgid "Normal"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:253
+msgid "Medium"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:254
+msgid "Bold"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:255
+msgid "Ultra Bold"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:270
+msgid "Italic"
+msgstr ""
+
+#: includes/class-digifly-wp-customizer-typo-control.php:271
+msgid "Oblique"
+msgstr ""
+
+#: includes/class-digifly.php:30
+msgid "Sidebar"
+msgstr ""
+
+#: includes/class-digifly.php:32
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: includes/class-digifly.php:40
+msgid "Download Sidebar"
+msgstr ""
+
+#: includes/class-digifly.php:42
+msgid "Add widgets here to appear in your %s sidebar."
+msgstr ""
+
+#: includes/class-digifly.php:56
+msgid "Footer %d"
+msgstr ""
+
+#: includes/class-digifly.php:58
+msgid "Add widgets here to appear in footer %d."
+msgstr ""
+
+#: includes/compatibility/edd/actions.php:31
+msgid "Free"
+msgstr ""
+
+#: includes/compatibility/edd/actions.php:33
+msgid "From"
+msgstr ""
+
+#: includes/compatibility/edd/class-digifly-edd-cross-sell-upsell.php:99
+#: includes/compatibility/edd/class-digifly-edd-cross-sell-upsell.php:123
+msgid "Add to cart"
+msgstr ""
+
+#: includes/compatibility/edd/class-digifly-edd-cross-sell-upsell.php:120
+msgid "Added to cart"
+msgstr ""
+
+#: includes/compatibility/edd/class-digifly-edd-frontend-submissions.php:57
+msgid "Contact vendor"
+msgstr ""
+
+#: includes/compatibility/edd/class-digifly-edd-nav-cart.php:412
+msgid "item"
+msgstr ""
+
+#: includes/compatibility/edd/class-digifly-edd-nav-cart.php:413
+msgid "items"
+msgstr ""
+
+#: includes/compatibility/edd/class-digifly-edd-points-and-rewards.php:141
+msgid "Apply Discount"
+msgstr ""
+
+#: includes/compatibility/edd/class-digifly-edd-points-and-rewards.php:154
+msgid "Remove %s Discount"
+msgstr ""
+
+#: includes/compatibility/edd/class-digifly-edd-points-and-rewards.php:155
+msgid "Remove"
+msgstr ""
+
+#: includes/compatibility/edd/functions-download-details.php:37
+msgid "%s Details"
+msgstr ""
+
+#: includes/compatibility/edd/functions-download-meta.php:74
+msgid "by"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:27
+msgid "Digifly: %s Author"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:29
+msgid "Display the %s author's details."
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:126
+#: sidebar-download.php:88
+msgid "Author:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:146
+#: sidebar-download.php:109
+msgid "Author since:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:164
+#: sidebar-download.php:124
+msgid "Website:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:202
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:185
+msgid "Only for use in Download Sidebar"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:205
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:188
+msgid "Title:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:211
+msgid "Show author avatar"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:217
+msgid "Show store name"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:223
+msgid "Show author name"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:228
+msgid "Show author signup date"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-author.php:233
+msgid "Show website"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:28
+msgid "Digifly: %s Details"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:30
+msgid "Display the %s details such as date published and number of sales."
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:84
+#: sidebar-download.php:169
+msgid "Published:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:97
+#: sidebar-download.php:182
+msgid "Sales:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:113
+#: sidebar-download.php:198
+msgid "Version:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:130
+#: sidebar-download.php:215
+msgid "Categories:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:148
+#: sidebar-download.php:232
+msgid "Tags:"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:194
+msgid "Show date published"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:199
+msgid "Show number of sales"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:205
+msgid "Show version number"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:211
+msgid "Show categories"
+msgstr ""
+
+#: includes/compatibility/edd/widgets/class-digifly-download-details.php:216
+msgid "Show tags"
+msgstr ""
+
+#: includes/customizer.php:270
+msgid "Site Title Color"
+msgstr ""
+
+#: includes/customizer.php:273
+msgid "The color of the site title."
+msgstr ""
+
+#: includes/customizer.php:282
+msgid "The color of the site's background."
+msgstr ""
+
+#: includes/customizer.php:305
+msgid "Tagline Color"
+msgstr ""
+
+#: includes/customizer.php:306
+msgid "The color of the site tagline (if set)."
+msgstr ""
+
+#: includes/customizer.php:322
+msgid "Colors"
+msgstr ""
+
+#: includes/customizer.php:336
+msgid "General"
+msgstr ""
+
+#: includes/customizer.php:350
+msgid "Header"
+msgstr ""
+
+#: includes/customizer.php:364
+msgid "Footer"
+msgstr ""
+
+#: includes/customizer.php:378
+msgid "Mobile Devices"
+msgstr ""
+
+#: includes/customizer.php:398
+msgid "Header Background Color"
+msgstr ""
+
+#: includes/customizer.php:399
+msgid "The background color of the site header."
+msgstr ""
+
+#: includes/customizer.php:425
+msgid "Primary Menu Background Color"
+msgstr ""
+
+#: includes/customizer.php:426
+msgid "The background color of the primary menu."
+msgstr ""
+
+#: includes/customizer.php:448
+msgid "Primary Menu Link Color"
+msgstr ""
+
+#: includes/customizer.php:449
+msgid "The color of primary menu links."
+msgstr ""
+
+#: includes/customizer.php:471
+msgid "Primary Menu Link Hover Color"
+msgstr ""
+
+#: includes/customizer.php:472
+msgid "The hover color of primary menu links."
+msgstr ""
+
+#: includes/customizer.php:494
+msgid "Primary Menu Link Active Color"
+msgstr ""
+
+#: includes/customizer.php:495
+msgid "The active color of primary menu links."
+msgstr ""
+
+#: includes/customizer.php:517
+msgid "Primary Menu Link Background Hover Color"
+msgstr ""
+
+#: includes/customizer.php:518
+msgid "The background hover color of primary menu links."
+msgstr ""
+
+#: includes/customizer.php:540
+msgid "Primary Menu Link Background Active Color"
+msgstr ""
+
+#: includes/customizer.php:541
+msgid "The background active color of primary menu links."
+msgstr ""
+
+#: includes/customizer.php:567
+msgid "Primary Sub-menu Link Color"
+msgstr ""
+
+#: includes/customizer.php:568
+msgid "The color of primary sub-menu links."
+msgstr ""
+
+#: includes/customizer.php:590
+msgid "Primary Sub-menu Link Hover Color"
+msgstr ""
+
+#: includes/customizer.php:591
+msgid "The hover color of primary sub-menu links."
+msgstr ""
+
+#: includes/customizer.php:613
+msgid "Primary Sub-menu Link Active Color"
+msgstr ""
+
+#: includes/customizer.php:614
+msgid "The active color of primary sub-menu links."
+msgstr ""
+
+#: includes/customizer.php:636
+msgid "Primary Sub-menu Background Color"
+msgstr ""
+
+#: includes/customizer.php:637
+msgid "The background color of primary sub-menus."
+msgstr ""
+
+#: includes/customizer.php:659
+msgid "Primary Sub-menu Background Hover Color"
+msgstr ""
+
+#: includes/customizer.php:660
+msgid "The background hover color of primary sub-menu links."
+msgstr ""
+
+#: includes/customizer.php:682
+msgid "Primary Sub-menu Background Active Color"
+msgstr ""
+
+#: includes/customizer.php:683
+msgid "The background active color of primary sub-menu links."
+msgstr ""
+
+#: includes/customizer.php:709
+msgid "Secondary Menu Link Color"
+msgstr ""
+
+#: includes/customizer.php:710
+msgid "The color of secondary menu links."
+msgstr ""
+
+#: includes/customizer.php:732
+msgid "Secondary Menu Link Hover"
+msgstr ""
+
+#: includes/customizer.php:733
+msgid "The hover color of secondary menu links."
+msgstr ""
+
+#: includes/customizer.php:755
+msgid "Link Color"
+msgstr ""
+
+#: includes/customizer.php:756
+msgid "The color of general links."
+msgstr ""
+
+#: includes/customizer.php:778
+msgid "Link Hover Color"
+msgstr ""
+
+#: includes/customizer.php:779
+msgid "The hover color of general links."
+msgstr ""
+
+#: includes/customizer.php:801
+msgid "Button Background Color"
+msgstr ""
+
+#: includes/customizer.php:802
+msgid "The background color of buttons."
+msgstr ""
+
+#: includes/customizer.php:824
+msgid "Button Background Hover Color"
+msgstr ""
+
+#: includes/customizer.php:825
+msgid "The background hover color of buttons."
+msgstr ""
+
+#: includes/customizer.php:847
+msgid "Button Text Color"
+msgstr ""
+
+#: includes/customizer.php:848
+msgid "The button text color."
+msgstr ""
+
+#: includes/customizer.php:870
+msgid "Button Text Hover Color"
+msgstr ""
+
+#: includes/customizer.php:871
+msgid "The button text hover color."
+msgstr ""
+
+#: includes/customizer.php:884
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: includes/customizer.php:904
+msgid "Restrict Header Search"
+msgstr ""
+
+#: includes/customizer.php:908
+msgid "If enabled, the header search will only search %s. Requires the \"Header Search\" option from Theme Options to be enabled."
+msgstr ""
+
+#: includes/customizer.php:925
+msgid "Distraction Free Checkout"
+msgstr ""
+
+#: includes/customizer.php:929
+msgid "Header menus, footer widgets and sidebars will all be removed from checkout, allowing customers to complete their purchase with no distractions."
+msgstr ""
+
+#: includes/customizer.php:949
+msgid "Display Vendor Contact Form"
+msgstr ""
+
+#: includes/customizer.php:953
+msgid "Display the vendor contact form on the vendor page."
+msgstr ""
+
+#: includes/customizer.php:962
+msgid "Typography"
+msgstr ""
+
+#: includes/customizer.php:967
+msgid "Body"
+msgstr ""
+
+#: includes/customizer.php:968
+msgid "Paragraphs"
+msgstr ""
+
+#: includes/customizer.php:969
+msgid "Headings"
+msgstr ""
+
+#: includes/customizer.php:1072
+msgid "Paragraph Typography"
+msgstr ""
+
+#: includes/customizer.php:1073
+msgid "Select how you want your paragraphs to appear."
+msgstr ""
+
+#: includes/customizer.php:1104
+msgid "Heading %s"
+msgstr ""
+
+#: includes/customizer.php:1105
+msgid "Select how you want your heading %s to appear"
+msgstr ""
+
+#: includes/customizer.php:1139
+msgid "Display Cart Icon"
+msgstr ""
+
+#: includes/customizer.php:1162
+msgid "Products Layout"
+msgstr ""
+
+#: includes/customizer.php:1163
+msgid "Controls the layout on archives and shortcodes."
+msgstr ""
+
+#: includes/customizer.php:1168
+#: includes/customizer.php:1869
+msgid "List View"
+msgstr ""
+
+#: includes/customizer.php:1169
+#: includes/customizer.php:1868
+msgid "Grid View"
+msgstr ""
+
+#: includes/customizer.php:1186
+msgid "Show/Hide Featured Image on Download Pages"
+msgstr ""
+
+#: includes/customizer.php:1187
+msgid "Controls visibility of Featured Image on Download Details page."
+msgstr ""
+
+#: includes/customizer.php:1193
+msgid "Show"
+msgstr ""
+
+#: includes/customizer.php:1194
+msgid "Hide"
+msgstr ""
+
+#: includes/customizer.php:1214
+msgid "Item Quantity and Cart Total"
+msgstr ""
+
+#: includes/customizer.php:1215
+msgid "Display either the item quantity or cart total, both the item quantity and cart total, or nothing at all."
+msgstr ""
+
+#: includes/customizer.php:1241
+msgid "Custom Post Type Archive Title"
+msgstr ""
+
+#: includes/customizer.php:1245
+msgid "Configure the title for the Custom Post Type Archive Title page at %s"
+msgstr ""
+
+#: includes/customizer.php:1276
+msgid "Full Width Layout"
+msgstr ""
+
+#: includes/customizer.php:1277
+msgid "Display a full width layout. This will be noticeable once colors have been configured."
+msgstr ""
+
+#: includes/customizer.php:1298
+msgid "Display Excerpts"
+msgstr ""
+
+#: includes/customizer.php:1299
+msgid "Display excerpts for posts instead of the full content."
+msgstr ""
+
+#: includes/customizer.php:1322
+msgid "Header Search"
+msgstr ""
+
+#: includes/customizer.php:1323
+msgid "Displays a search box in the header and mobile menu."
+msgstr ""
+
+#: includes/customizer.php:1343
+msgid "Shop Page Template"
+msgstr ""
+
+#: includes/customizer.php:1344
+msgid "Select between a sidebar layout and full width layout for Shop Page"
+msgstr ""
+
+#: includes/customizer.php:1349
+msgid "Has Sidebar"
+msgstr ""
+
+#. Template Name of the theme
+#: includes/customizer.php:1350
+msgid "Full Width"
+msgstr ""
+
+#: includes/customizer.php:1374
+msgid "Mobile Menu Button Background Color"
+msgstr ""
+
+#: includes/customizer.php:1375
+msgid "The background color of the mobile menu button."
+msgstr ""
+
+#: includes/customizer.php:1397
+msgid "Mobile Menu Button Text Color"
+msgstr ""
+
+#: includes/customizer.php:1398
+msgid "The text color of the mobile menu button."
+msgstr ""
+
+#: includes/customizer.php:1420
+msgid "Mobile Menu Background Color"
+msgstr ""
+
+#: includes/customizer.php:1421
+msgid "The background color of the mobile menu."
+msgstr ""
+
+#: includes/customizer.php:1443
+msgid "Mobile Menu Link Color"
+msgstr ""
+
+#: includes/customizer.php:1444
+msgid "The link color of the mobile menu."
+msgstr ""
+
+#: includes/customizer.php:1470
+msgid "Footer Background Color"
+msgstr ""
+
+#: includes/customizer.php:1471
+msgid "The background color of the footer."
+msgstr ""
+
+#: includes/customizer.php:1493
+msgid "Footer Text Color"
+msgstr ""
+
+#: includes/customizer.php:1494
+msgid "The color of footer text."
+msgstr ""
+
+#: includes/customizer.php:1516
+msgid "Footer Link Color"
+msgstr ""
+
+#: includes/customizer.php:1517
+msgid "The color of footer links."
+msgstr ""
+
+#: includes/customizer.php:1539
+msgid "Footer Link Hover Color"
+msgstr ""
+
+#: includes/customizer.php:1540
+msgid "The hover color of footer links."
+msgstr ""
+
+#: includes/customizer.php:1562
+msgid "Footer Heading Color"
+msgstr ""
+
+#: includes/customizer.php:1563
+msgid "The color of footer headings."
+msgstr ""
+
+#: includes/customizer.php:1585
+msgid "Footer Site Info Color"
+msgstr ""
+
+#: includes/customizer.php:1586
+msgid "The color of footer site info."
+msgstr ""
+
+#: includes/customizer.php:1613
+msgid "Mobile Menu Cart Icon Color"
+msgstr ""
+
+#: includes/customizer.php:1614
+msgid "The color of the cart icon in the mobile menu."
+msgstr ""
+
+#: includes/customizer.php:1636
+msgid "Cart Icon Color"
+msgstr ""
+
+#: includes/customizer.php:1637
+msgid "The color of the cart icon."
+msgstr ""
+
+#: includes/customizer.php:1661
+msgid "Header Search Background Color"
+msgstr ""
+
+#: includes/customizer.php:1662
+msgid "The background color of the search box in the header."
+msgstr ""
+
+#: includes/customizer.php:1684
+msgid "Header Search Text Color"
+msgstr ""
+
+#: includes/customizer.php:1685
+msgid "The color of the search box text in the header."
+msgstr ""
+
+#: includes/customizer.php:1707
+msgid "Header Search Icon Color"
+msgstr ""
+
+#: includes/customizer.php:1708
+msgid "The color of the search box icon in the header."
+msgstr ""
+
+#: includes/customizer.php:1730
+msgid "Mobile Search Background Color"
+msgstr ""
+
+#: includes/customizer.php:1731
+msgid "The background color of the search box in the mobile menu."
+msgstr ""
+
+#: includes/customizer.php:1753
+msgid "Mobile Search Text Color"
+msgstr ""
+
+#: includes/customizer.php:1754
+msgid "The color of the search box in the mobile menu."
+msgstr ""
+
+#: includes/customizer.php:1776
+msgid "Mobile Search Icon Color"
+msgstr ""
+
+#: includes/customizer.php:1777
+msgid "The color of the search box icon in the mobile menu."
+msgstr ""
+
+#: includes/customizer.php:1790
+msgid "Footer Options"
+msgstr ""
+
+#: includes/customizer.php:1809
+msgid "Footer Columns"
+msgstr ""
+
+#: includes/customizer.php:1810
+msgid "Number of columns in footer"
+msgstr ""
+
+#: includes/customizer.php:1812
+msgid "One Column"
+msgstr ""
+
+#: includes/customizer.php:1813
+msgid "Two Columns"
+msgstr ""
+
+#: includes/customizer.php:1814
+msgid "Three Columns"
+msgstr ""
+
+#: includes/customizer.php:1815
+msgid "Four Columns"
+msgstr ""
+
+#: includes/customizer.php:1816
+msgid "Five Columns"
+msgstr ""
+
+#: includes/customizer.php:1826
+#: includes/footer.php:93
+msgid "Copyright &copy; {Year} %s"
+msgstr ""
+
+#: includes/customizer.php:1835
+msgid "Copyright"
+msgstr ""
+
+#: includes/customizer.php:1836
+msgid "{Year} can be used to print current year."
+msgstr ""
+
+#: includes/customizer.php:1846
+msgid "Blog Options"
+msgstr ""
+
+#: includes/customizer.php:1865
+msgid "Layout"
+msgstr ""
+
+#: includes/customizer.php:1867
+msgid "Standard"
+msgstr ""
+
+#: includes/customizer.php:1888
+msgid "Sidebars"
+msgstr ""
+
+#: includes/customizer.php:1890
+msgid "Right Sidebar"
+msgstr ""
+
+#: includes/customizer.php:1891
+msgid "Left Sidebar"
+msgstr ""
+
+#: includes/customizer.php:1892
+msgid "No Sidebar"
+msgstr ""
+
+#: includes/customizer.php:2452
+msgid "Display item quantity only"
+msgstr ""
+
+#: includes/customizer.php:2453
+msgid "Display cart total only"
+msgstr ""
+
+#: includes/customizer.php:2454
+msgid "Display item quantity and cart total"
+msgstr ""
+
+#: includes/customizer.php:2455
+msgid "Display nothing"
+msgstr ""
+
+#: includes/filters.php:82
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: includes/footer.php:101
+msgid "DigiFly Theme <a href=\"%s\" target=\"_blank\">Plugins & Snippets.</a>"
+msgstr ""
+
+#: includes/functions.php:277
+msgid "Read More"
+msgstr ""
+
+#: includes/header.php:14
+msgid "Skip to content"
+msgstr ""
+
+#: includes/scripts.php:37
+msgid "expand child menu"
+msgstr ""
+
+#: includes/scripts.php:38
+msgid "collapse child menu"
+msgstr ""
+
+#: includes/setup.php:57
+msgid "Primary Menu"
+msgstr ""
+
+#: includes/setup.php:58
+msgid "Secondary Menu"
+msgstr ""
+
+#: includes/setup.php:59
+msgid "Mobile Menu"
+msgstr ""
+
+#. translators: %s: post author
+#: includes/template-tags.php:23
+msgid "by %s"
+msgstr ""
+
+#. translators: %s: post date
+#: includes/template-tags.php:58
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr ""
+
+#: includes/template-tags.php:75
+msgid "Comment navigation"
+msgstr ""
+
+#: includes/template-tags.php:78
+msgid "Older Comments"
+msgstr ""
+
+#: includes/template-tags.php:84
+msgid "Newer Comments"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: includes/template-tags.php:105
+msgid ", "
+msgstr ""
+
+#: includes/template-tags.php:125
+msgid "Categories: "
+msgstr ""
+
+#: includes/template-tags.php:129
+msgid "Tags: "
+msgstr ""
+
+#. translators: %s: Name of current post
+#: includes/template-tags.php:157
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: includes/template-tags.php:334
+msgid "Older posts"
+msgstr ""
+
+#: includes/template-tags.php:335
+msgid "Newer posts"
+msgstr ""
+
+#: includes/template-tags.php:341
+msgid "Posts navigation"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Slim"
+msgstr ""
+
+#: search.php:9
+msgid "Search Results"
+msgstr ""
+
+#: search.php:11
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:17
+msgid "You searched for \"%s\""
+msgstr ""
+
+#: searchform.php:6
+msgctxt "placeholder"
+msgid "Search"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: sidebar-single-vendor.php:63
+msgid "Visit website"
+msgstr ""
+
+#: single.php:33
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr ""
+
+#: single.php:40
+msgid "Next"
+msgstr ""
+
+#: single.php:41
+msgid "Next post:"
+msgstr ""
+
+#: single.php:43
+msgid "Previous"
+msgstr ""
+
+#: single.php:44
+msgid "Previous post:"
+msgstr ""
+
+#: template-parts/biography.php:27
+msgid "About the author:"
+msgstr ""
+
+#: template-parts/content-none.php:10
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:19
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:20
+#: template-parts/content-single.php:25
+#: template-parts/content.php:45
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: template-parts/content-search.php:27
+#: template-parts/content-search.php:42
+msgid "Edit %s"
+msgstr ""
+
+#: template-parts/content.php:38
+msgid "Continue reading %s"
+msgstr ""
+
+#: template-parts/content.php:49
+msgid "Page"
+msgstr ""

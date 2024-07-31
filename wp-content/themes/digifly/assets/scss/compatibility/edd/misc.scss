@@ -1,0 +1,153 @@
+.edd_purchase_tax_rate {
+	display: block;
+	font-size: 0.9375rem; // 15px
+	margin-top: 0.5rem;
+}
+
+.edd-item-quantity {
+	width: 4rem;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+}
+
+.edd-select {
+	vertical-align: middle;
+	padding: 0.8125rem;
+	width: 100%;
+}
+
+// Reduce the size of any button after a select menu.
+.edd-select ~ .button {
+	font-size: 0.875rem;
+	padding: 0.25rem 0.75rem;
+}
+
+// EDD - Coming Soon
+.edd-cs-voted {
+	margin-bottom: 0;
+}
+
+.edd-cs-voted,
+.edd-cs-vote-description {
+	font-style: italic;
+	font-size: 0.875rem;
+}
+
+.edd-cs-vote-description {
+	margin-bottom: 1rem;
+}
+
+// EDD Wish Lists
+
+.edd-wl-wish-lists .edd-wish-list li::after {
+	width: auto;
+}
+
+// EDD Requests
+.pseddreq-container {
+	.data-details {
+		.budget {
+			white-space: nowrap;
+		}
+		div[class^="col-"] {
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+		}
+
+		.action {
+			button {
+				font-size: 1.1rem;
+			}
+		}
+	}
+
+	#Request_list_holder  {
+		.pseddreq-modal1-dialog {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+.pseddreq-dashboard-details {
+	background-color: transparent;
+}
+
+// EDD Landing Pages
+.edd-lpct-downloads-list-container {
+	.edd_downloads_list {
+		.edd_download_inner {
+			min-height: 100%;
+			.edd-download-content {
+				min-height: 100%;
+				padding-top: 0;
+				display: flex;
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+
+// EDD Advanced Shortcodes
+.edd-eas-shortcode-container {
+	.edd-eas-shortcode-record-content {
+		.edd-eas-shortcode-record-body {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	.edd-eas-shortcode-record-buy-button-container {
+		.edd_download_buy_button {
+			padding: 15px;
+			form .edd_purchase_submit_wrapper {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+// EDD List View
+.edd-list-view {
+	
+	.edd_download_inner {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		overflow: hidden;
+
+		.edd_download_image {
+			width: 25%;
+			display: flex;
+			@media #{$screen-md-max} {
+				width: 100%;
+			}
+		}
+
+		.edd_download_image + .edd-download-content {
+			width: 75%;
+			@media #{$screen-md-max} {
+				width: 100%;
+			}
+		}
+		
+		.edd_download_image a {
+			display: flex;
+		}
+		
+		.edd_download_image a img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	.edd_download_image img {
+		border-radius: 0;
+	}
+
+	.edd_download_excerpt {
+		display: none;
+	}
+}

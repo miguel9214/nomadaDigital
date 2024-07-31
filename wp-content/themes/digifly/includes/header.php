@@ -1,0 +1,292 @@
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
+ * Load the "skip" link onto the digifly_header hook found in /header.php.
+ *
+ * @since 1.0.0
+ */
+function digifly_skip_link() {
+	?>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'digifly' ); ?></a>
+	<?php
+}
+add_action( 'digifly_header', 'digifly_skip_link' );
+
+/**
+ * Load the header section onto the digifly_header hook found in /header.php.
+ *
+ * @since 1.0.0
+ */
+function digifly_header() {
+	?>
+	<header id="masthead" class="site-header" role="banner">
+		<?php do_action( 'digifly_header_masthead' ); ?>
+	</header>
+	<?php
+}
+add_action( 'digifly_header', 'digifly_header' );
+
+/**
+ * Load div.site-header-main inside header#masthead.
+ *
+ * @see digifly_header()
+ * @since 1.0.3
+ */
+function digifly_header_masthead() {
+	?>
+	<div class="site-header-main">
+		<?php do_action( 'digifly_site_header_main' ); ?>
+	</div>
+	<?php
+}
+add_action( 'digifly_header_masthead', 'digifly_header_masthead' );
+
+/**
+ * Load div.site-header-wrap inside div.site-header-main.
+ *
+ * @since 1.0.3
+ */
+function digifly_site_header_main() {
+	$site_header_wrap_classes = apply_filters( 'digifly_header_site_header_wrap_classes', array( 'site-header-wrap', 'between-xs' ) );
+	?>
+	<div class="<?php echo implode( ' ', array_filter( $site_header_wrap_classes ) ); ?>">
+		<?php do_action( 'digifly_site_header_wrap' ); ?>
+	</div>
+	<?php
+}
+add_action( 'digifly_site_header_main', 'digifly_site_header_main' );
+
+/**
+ * Load the menu toggle inside div.site-header-wrap.
+ * This displays a "Menu" button, and when clicked changes to "Close Menu"
+ *
+ * @since 1.0.0
+ */
+function digifly_menu_toggle() {
+	if ( ! ( has_nav_menu( 'primary' ) || has_nav_menu( 'mobile' ) ) ) {
+		return;
+	}
+	?>
+	<div id="menu-toggle-wrap">
+		<button id="menu-toggle" class="menu-toggle"><span class="genericon genericon-menu"></span></button>
+	</div>
+	<?php
+}
+add_action( 'digifly_site_branding_end', 'digifly_menu_toggle' );
+
+/**
+ * Loads the mobile menu onto the digifly_site_header_wrap action hook
+ *
+ * @since 1.0.0
+ */
+function digifly_mobile_menu() {
+
+	// Use the mobile menu if it exists, otherwise fallback to primary.
+	$theme_location = has_nav_menu( 'mobile' ) ? 'mobile' : 'primary';
+
+	wp_nav_menu(
+		apply_filters(
+			'digifly_mobile_menu',
+			array(
+				'menu_id'         => 'mobile-menu',
+				'menu_class'      => 'menu',
+				'theme_location'  => $theme_location,
+				'container_class' => 'mobile-navigation',
+			)
+		)
+	);
+}
+add_action( 'digifly_mobile_navigation', 'digifly_mobile_menu' );
+
+/**
+ * Load the site branding (site title, site description, logo) inside div.site-header-wrap.
+ *
+ * @since 1.0.0
+ */
+function digifly_site_branding() {
+	?>
+
+	<div class="<?php echo implode( ' ', array_filter( apply_filters( 'digifly_site_branding_classes', array( 'site-branding', 'start-sm' ) ) ) ); ?>">
+
+		<?php do_action( 'digifly_site_branding_start' ); ?>
+
+		<?php if ( is_front_page() && is_home() ) : ?>
+			<h1 class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<?php do_action( 'digifly_site_branding_site_title_before' ); ?>
+					<span><?php bloginfo( 'name' ); ?></span>
+					<?php do_action( 'digifly_site_branding_site_title_after' ); ?>
+				</a>
+				<?php
+				/**
+				 * Description
+				 */
+				$description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $description; ?></p>
+				<?php endif; ?>
+			</h1>
+		<?php else : ?>
+			<div class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<?php do_action( 'digifly_site_branding_site_title_before' ); ?>
+					<span><?php bloginfo( 'name' ); ?></span>
+					<?php do_action( 'digifly_site_branding_site_title_after' ); ?>
+				</a>
+				<?php
+				/**
+				 * Description
+				 */
+				$description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $description; ?></p>
+				<?php endif; ?>
+			</div>
+		<?php endif; ?>
+
+		<?php do_action( 'digifly_site_branding_end' ); ?>
+
+	</div>
+
+	<?php do_action( 'digifly_mobile_navigation' ); ?>
+
+	<?php
+}
+add_action( 'digifly_site_header_wrap', 'digifly_site_branding' );
+
+/**
+ * Loads the site navigation onto the digifly_masthead action hook
+ *
+ * @since 1.0.0
+ */
+function digifly_primary_menu() {
+
+	if ( has_nav_menu( 'primary' ) ) :
+		?>
+
+		<div id="site-header-menu" class="site-header-menu">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php
+				wp_nav_menu(
+					apply_filters(
+						'digifly_primary_navigation',
+						array(
+							'menu_id'        => 'primary-menu',
+							'menu_class'     => 'primary-menu menu',
+							'theme_location' => 'primary',
+							'container'      => '',
+						)
+					)
+				);
+				?>
+			</nav>
+		</div>
+
+		<?php
+	endif;
+}
+add_action( 'digifly_site_header_main', 'digifly_primary_menu' );
+
+/**
+ * Loads the site's secondary menu
+ *
+ * This contains:
+ *
+ * 1. The secondary navigation (if set)
+ * 2. The EDD cart (if enabled)
+ * 3. The header search box (if enabled)
+ *
+ * @since 1.0.0
+ */
+function digifly_secondary_menu() {
+
+	/**
+	 * Only show the secondary menu if there's something hooked onto it
+	 */
+	if ( has_action( 'digifly_secondary_menu' ) ) :
+		?>
+	<div id="site-header-secondary-menu" class="site-header-menu">
+		<?php do_action( 'digifly_secondary_menu' ); ?>
+	</div>
+		<?php
+	endif;
+}
+add_action( 'digifly_site_header_wrap', 'digifly_secondary_menu' );
+
+/**
+ * Loads the site's secondary navigation
+ *
+ * @since 1.0.0
+ */
+function digifly_secondary_navigation() {
+	?>
+	<nav id="secondary-navigation" class="secondary-navigation" role="navigation">
+		<?php
+		wp_nav_menu(
+			apply_filters(
+				'digifly_secondary_navigation',
+				array(
+					'menu_id'        => 'secondary-menu',
+					'menu_class'     => 'menu',
+					'theme_location' => 'secondary',
+					'depth'          => 1,
+					'container'      => '',
+				)
+			)
+		);
+		?>
+	</nav>
+	<?php
+}
+
+/**
+ * DigiFly custom header
+ *
+ * @since 1.0.0
+ */
+function digifly_header_image() {
+
+	if ( get_header_image() ) :
+		?>
+
+	<div class="header-image">
+
+		<?php if ( digifly_layout_full_width() ) : ?>
+			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+		<?php else : ?>
+			<?php
+				/**
+				 * Filter the default digifly custom header sizes attribute.
+				 *
+				 * @since DigiFly 1.0.0
+				 *
+				 * @param string $custom_header_sizes sizes attribute
+				 * for Custom Header. Default '(max-width: 709px) 85vw,
+				 * (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1480px'.
+				 */
+				$custom_header_sizes = apply_filters( 'digifly_custom_header_sizes', '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1480px' );
+			?>
+			<img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id ) ); ?>" sizes="<?php echo esc_attr( $custom_header_sizes ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+		<?php endif; ?>
+
+	</div>
+		<?php
+endif;
+}
+add_action( 'digifly_header', 'digifly_header_image' );
+
+/**
+ * DigiFly custom logo
+ *
+ * @since 1.0.0
+ */
+function digifly_header_logo() {
+	digifly_the_custom_logo();
+}
+add_action( 'digifly_site_branding_start', 'digifly_header_logo' );

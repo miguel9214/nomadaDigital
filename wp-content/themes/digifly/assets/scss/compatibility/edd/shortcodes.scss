@@ -1,0 +1,29 @@
+// login form
+
+#edd_login_form fieldset,
+#edd_register_form fieldset {
+    // border: 2px solid $border-light-grey-alt;
+    // background: $light-grey-alt;
+    border: 0;
+    background: $white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: $drop-shadow;
+}
+
+#edd_login_form fieldset .row div,
+#edd_register_form fieldset .row div {
+    padding: 0;
+}
+
+#edd_login_form legend,
+#edd_register_form legend {
+    display: none;
+}
+
+.edd-lost-password {
+    margin-bottom: 0;
+}
+.edd_downloads_list{
+    grid-column-gap: 0px;
+}

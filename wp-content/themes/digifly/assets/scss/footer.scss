@@ -1,0 +1,125 @@
+// Site footer.
+.site-footer {
+	background: $footer-background-color;
+
+	ul {
+		margin-left: 0;
+		margin-top: 0;
+
+		&.wp-block-social-links {
+			display: block;
+		}
+
+		ul {
+			margin-left: 1rem;
+		}
+	}
+
+	li {
+		list-style-type: none;
+		margin-bottom: 0;
+		font-size: .875rem;
+		letter-spacing: $content-letter-space;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 3;
+		a{
+			display: inline-block;
+			&::after{
+				content: '';
+				width: 0;
+		        height: 1px;
+		        bottom: 0;
+		        position: absolute;
+		        left: auto;
+		        right: 0;
+		        z-index: -1;
+		        -webkit-transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+		        transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+		        background: currentColor;
+			}
+
+			&:hover {
+				&:after {
+					width: 100%;
+				    left: 0;
+				    right: auto;
+				}
+			}
+		}
+	}
+
+	a {
+		color: $nav-footer-link-color;
+		display: inline-block;
+		font-size: .875rem;
+		letter-spacing: $content-letter-space;
+		&::after{
+			content: '';
+			width: 0;
+	        height: 1px;
+	        bottom: 0;
+	        position: absolute;
+	        left: auto;
+	        right: 0;
+	        z-index: -1;
+	        -webkit-transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+	        transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+	        background: currentColor;
+		}
+
+		&:hover {
+			color: $nav-footer-link-hover-color;
+			&:after {
+				width: 100%;
+			    left: 0;
+			    right: auto;
+			}
+		}
+	}
+	p{
+		font-size: .875rem;
+		letter-spacing: $content-letter-space;
+
+	}
+}
+
+// Footer widgets.
+.footer-widgets .widget-column {
+	padding: 1rem;
+}
+.footer-widgets {
+	p{
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	ul li{
+		margin-bottom: 10px;
+	}
+	.wp-block-separator {
+		margin: 0 0 0.5rem;
+	}
+}	
+// Site info.
+.site-info {
+	padding: 2rem;
+	text-align: center;
+	color: $site-info-color;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+@media #{$screen-sm}{
+
+	.footer-widgets .widget-column {
+		padding: 2rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 2rem;
+	}
+
+}

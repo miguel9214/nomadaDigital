@@ -1,0 +1,21 @@
+<?php
+/**
+ * The template for displaying the footer
+ */
+?>
+
+	<?php do_action( 'digifly_content_end' ); ?>
+
+	</div>
+
+	<?php do_action( 'digifly_content_after' ); ?>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<?php do_action( 'digifly_footer' ); ?>
+	</footer>
+
+</div>
+
+<?php wp_footer(); ?>
+</body>
+</html>

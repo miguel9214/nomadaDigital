@@ -1,0 +1,187 @@
+.woocommerce {
+	#payment {
+		#place_order {
+			width: 100%;
+			padding: 1em;
+			font-size: 1.25em;
+		}
+	}
+
+	a.button,
+	.cart .button,
+	.product .cart .button {
+		background: $button-background-color;
+		color: #fff;
+		line-height: 1.4;
+		padding: 0.8125rem;
+
+		&:disabled[disabled] {
+			padding: 0.8125rem;
+			color: #fff;
+		}
+
+		&:hover {
+			color: #fff;
+			background: $button-background-hover-color;
+		}
+	}
+
+	.product_meta {
+		margin-bottom: 1rem;
+
+		> span {
+			display: block;
+		}
+	}
+
+	.woocommerce a.added_to_cart {
+		display: block;
+	}
+}
+
+/* Coupon Field */
+.woocommerce-cart {
+	table.cart {
+		.coupon {
+			.input-text {
+				padding: 0.8125rem;
+				min-height: 3rem;
+				min-width: 10rem;
+			}
+		}
+	}
+}
+
+/* Grid Fix */
+#main {
+	ul.products {
+		display: flex;
+		flex-wrap: wrap;
+		
+		.product {
+			padding-bottom: 4rem;
+			position: relative;
+
+			> .button {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+/* My Account Fix */
+
+.woocommerce-MyAccount-navigation>ul {
+    margin: 0;
+}
+body .woocommerce-MyAccount-navigation-link{
+	list-style: none;
+    border: 1px solid #d3d3d3;
+    border-bottom-width: 0;
+}
+body li.woocommerce-MyAccount-navigation-link {
+    margin-bottom: 0px;
+}
+body .woocommerce-MyAccount-navigation-link:last-child {
+    border-bottom-width: 1px;
+}
+body .woocommerce-MyAccount-navigation-link a{
+	display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+body .woocommerce-MyAccount-navigation-link.is-active a {
+    background-color: #fbfbfb;
+}
+.woocommerce-MyAccount-navigation-link.is-active a {
+    color: #3a3a3a;
+}
+.woocommerce .woocommerce-Addresses .woocommerce-Address-title, .woocommerce .woocommerce-Addresses .woocommerce-column__title, .woocommerce .woocommerce-MyAccount-content .woocommerce-Address-title, .woocommerce .woocommerce-MyAccount-content .woocommerce-column__title, .woocommerce .woocommerce-customer-details .woocommerce-Address-title, .woocommerce .woocommerce-customer-details .woocommerce-column__title, .woocommerce-account .woocommerce-Addresses .woocommerce-Address-title, .woocommerce-account .woocommerce-Addresses .woocommerce-column__title, .woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address-title, .woocommerce-account .woocommerce-MyAccount-content .woocommerce-column__title, .woocommerce-account .woocommerce-customer-details .woocommerce-Address-title, .woocommerce-account .woocommerce-customer-details .woocommerce-column__title {
+    background: #fbfbfb;
+    padding: 0.5em;
+    margin-bottom: 0;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: #d3d3d3;
+}
+.woocommerce .woocommerce-Addresses .woocommerce-Address-title h3, .woocommerce .woocommerce-Addresses .woocommerce-column__title h3, .woocommerce .woocommerce-MyAccount-content .woocommerce-Address-title h3, .woocommerce .woocommerce-MyAccount-content .woocommerce-column__title h3, .woocommerce .woocommerce-customer-details .woocommerce-Address-title h3, .woocommerce .woocommerce-customer-details .woocommerce-column__title h3, .woocommerce-account .woocommerce-Addresses .woocommerce-Address-title h3, .woocommerce-account .woocommerce-Addresses .woocommerce-column__title h3, .woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address-title h3, .woocommerce-account .woocommerce-MyAccount-content .woocommerce-column__title h3, .woocommerce-account .woocommerce-customer-details .woocommerce-Address-title h3, .woocommerce-account .woocommerce-customer-details .woocommerce-column__title h3{
+    margin-bottom: 0;
+}
+.woocommerce-Address h3{
+	font-size: 1.2rem;
+    padding: 0.7em 1em;
+}
+.woocommerce-account .addresses .title .edit{
+	padding: 0.7em 1em;
+	text-decoration: none;
+}
+.woocommerce .woocommerce-Addresses address, .woocommerce .woocommerce-MyAccount-content address, .woocommerce .woocommerce-customer-details address, .woocommerce-account .woocommerce-Addresses address, .woocommerce-account .woocommerce-MyAccount-content address, .woocommerce-account .woocommerce-customer-details address {
+    border: 1px solid #d3d3d3;
+    padding: 1em;
+    border-radius: 0;
+}
+.woocommerce .select2-container--default .select2-selection--single .select2-selection__arrow{
+	top: 50%;
+    width: 1.7em;
+    transform: translateY(-50%);
+}
+.woocommerce .select2-container .select2-selection--single{
+	height: auto;
+    padding: 0.5em;
+}
+
+/* Checkout Fix */
+
+.woocommerce #customer_details, .woocommerce .woocommerce table.shop_table {
+    margin-bottom: 2em;
+    border-radius: 0;
+}
+form #order_review_heading:not(.elementor-widget-woocommerce-checkout-page #order_review_heading) {
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+    margin: 0;
+    padding: 1em 0.6em 1em;
+    border-color: #d3d3d3;
+    font-weight: 700;
+}
+form #order_review:not(.elementor-widget-woocommerce-checkout-page #order_review) {
+    padding: 0 1em;
+    border-width: 0 2px 2px;
+    border-style: solid;
+    border-color: #d3d3d3;
+}
+.woocommerce-billing-fields {
+    margin-bottom: 1.62rem;
+}
+.woocommerce-page.woocommerce-checkout form #order_review table, .woocommerce.woocommerce-checkout form #order_review table {
+    border-width: 0;
+}
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment{
+	background: transparent;
+}
+.woocommerce-checkout #payment ul.payment_methods {
+    padding: 0;
+}
+.woocommerce-page.woocommerce-checkout #payment div.form-row, .woocommerce.woocommerce-checkout #payment div.form-row {
+    padding: 1em 0 2em;
+}
+
+@media (min-width: 922px){
+	.woocommerce.woocommerce-checkout form #customer_details.col2-set, .woocommerce-page.woocommerce-checkout form #customer_details.col2-set {
+	    width: 55%;
+	    float: left;
+	    margin-right: 4.347826087%;
+	}
+	.woocommerce.woocommerce-checkout form #order_review, .woocommerce.woocommerce-checkout form #order_review_heading, .woocommerce-page.woocommerce-checkout form #order_review, .woocommerce-page.woocommerce-checkout form #order_review_heading {
+	    width: 40%;
+	    float: right;
+	    margin-right: 0;
+	    clear: right;
+	}
+	.woocommerce-page.woocommerce-checkout form #customer_details.col2-set .col-1, .woocommerce-page.woocommerce-checkout form #customer_details.col2-set .col-2 {
+	    float: none;
+	    width: auto;
+	}
+}

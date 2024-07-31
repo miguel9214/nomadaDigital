@@ -1,0 +1,51 @@
+// links
+a {
+    color: $link-color;
+    text-decoration: none;
+    outline: 0;
+    &:hover, &:active, &:visited {
+        text-decoration: none;
+        outline: 0;
+    }
+    &:focus {
+        text-decoration: none;
+        outline: 1px solid;
+    }
+    &:hover {
+        outline: 0;
+        color: $link-hover-color;
+    }
+}
+button {
+    &:focus {
+        outline: 1px solid #8b8b8b;
+    }
+}
+// content links
+.entry-content a, .widget_text a, .comment-content a {
+    color: $link-color;
+    text-decoration: underline;
+    outline: 0;
+    &:hover, &:focus, &:active, &:visited {
+        text-decoration: none;
+        outline: 0;
+    }
+    &:hover {
+        outline: 0;
+        color: $link-hover-color;
+    }
+
+    &.wp-block-button__link {
+        text-decoration: none;
+    }
+}
+
+.entry-content {
+    .wp-block-button {
+        &.is-full-width {
+            a {
+                width: 100%;
+            }
+        }
+    }
+}
